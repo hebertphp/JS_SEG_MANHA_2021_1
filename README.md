@@ -1,1 +1,2 @@
-# JS_SEGUNDA_MANH-_2021_1
+# JS_SEG_MANHA_2021_1
+Arquivos para a aula de Programação FrontEnd segunda-feira - manhã
