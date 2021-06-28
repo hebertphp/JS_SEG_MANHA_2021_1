@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eventos0</title>
+        <meta charset="utf8">
+        <script>
+        function fundo(){
+          var fun=document.querySelector("#fun");
+          fun.style.backgroundColor="yellow";
+        }
+        </script>
+    </head>
+    <body onload="alert('Eventos Javascript')">
+    <h1 onmouseover="this.style.color='red'"" onmouseout="this.style.color='black'">Passe o ponteiro do Mouse Aqui!</h1>   
+    <h1 onclick="fundo()" id="fun">Clique aqui!</h1>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eventos3</title>
+        <meta charset="utf8">
+        <style>
+            img{
+                width: 200px;
+            }
+        </style>
+        <script>
+            window.onload=function(){
+                alert("Eventos");
+                muda();
+            }
+            function cor(){
+
+            }
+            function muda(){
+                var img = document.querySelector("#img1");
+                img1.onmouseover=function(){
+                    img1.src='btn_off.jpg';
+                }
+                img1.onmouseout=function(){
+                    img1.src='btn_on.jpg';
+                }
+                var txt = document.querySelector("#txt");
+                txt.onclick=function(){
+                    if(txt.style.color=='blue'){
+                        txt.style.color='black';
+                        txt.style.textAlign='left';
+                    }    
+                    else {   
+                      txt.style.color='blue';    
+                      txt.style.textAlign='center';
+                    }
+                }    
+            }
+
+        </script>
+    </head>
+    <body>
+        <img src="btn_on.jpg" id="img1"><br>
+        <h1 id="txt">Clique!!</h1>
+    </body>
+</html>

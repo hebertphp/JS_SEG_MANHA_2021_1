@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eventos2</title>
+        <meta charset="utf8">
+        <script>
+            function contar(){
+                var limite=8;
+                var s3=document.querySelector('#s3');
+                var cep=document.querySelector('#cep'); 
+                s3.innerHTML=cep.value.length; 
+                if(cep.value.length>limite)
+                  cep.value=cep.value.substring( 0, limite );       
+                s3.innerHTML=cep.value.length; 
+            }
+        </script>
+    </head>
+    <body>
+        <form onsubmit="alert('Enviar!');">
+        Login <input type="text" name="login" id="login" onfocus="document.querySelector('#s1').innerHTML='focus!'"><span id="s1"></span>  <br>
+        E-mail <input type="email" name="email" id="email" onblur="document.querySelector('#s2').innerHTML='Perdeu o focus!'"><span id="s2"></span><br>
+        CEP<input type="number" name="cep" id="cep" onkeyup="contar()"><span id="s3">0</span><br>
+        <input type="submit" value="Enviar">
+        </form>
+
+    </body>
+</html>
